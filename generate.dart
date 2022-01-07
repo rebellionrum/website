@@ -9,7 +9,7 @@ List<Product> products = [
     rrp: 38,
     blurb:
         'One of the highest purity vodkas you will experience. So smooth you will hardly know its in your drink.',
-    image: '',
+    image: 'images/product_shots/whitestag.jpg',
   ),
   Product(
     title: 'Citrus',
@@ -17,7 +17,7 @@ List<Product> products = [
     rrp: 46,
     blurb:
         'A clean, crisp Gin with a light citrus punch. A great summer drink goes excellent with a Gin and Tonic.',
-    image: '',
+    image: 'images/product_shots/citrus.jpg',
   ),
   Product(
     title: 'Citrus Sapphire',
@@ -25,7 +25,7 @@ List<Product> products = [
     rrp: 46,
     blurb:
         'Limited edition butterfly pea version of the Citrus Ginnie in a bottle. Changes colour to a beatutiful magenta when you add soda or gin and tonic.',
-    image: '',
+    image: 'images/product_shots/citrus_sapphire.jpg',
   ),
   Product(
     title: 'Traditional Fine Gin',
@@ -33,7 +33,7 @@ List<Product> products = [
     rrp: 46,
     blurb:
         'Juniper, coriander, cardamom, angelica root & just a hint of citrus. Because its traditional does not mean its boring. Feedback from our testers is that its one of the best gins they have ever had. Don\'t believe it? Come on in a try it out.',
-    image: '',
+    image: 'images/product_shots/traditional.jpg',
   ),
   Product(
     title: 'Traditional Butterfly Pea',
@@ -41,7 +41,7 @@ List<Product> products = [
     rrp: 46,
     blurb:
         'The same recipe as the traditional fine gin, but infused with butterfly pea flower to make a magical colour changing experience.',
-    image: '',
+    image: 'images/product_shots/traditional_blue.jpg',
   ),
   Product(
     title: 'Cloak & Dagger',
@@ -49,7 +49,7 @@ List<Product> products = [
     rrp: 44,
     blurb:
         'A true aussie sugar cane spirit, excellent with coke. If you are tired of Bundy and want to give something else a try, this is for you.',
-    image: '',
+    image: 'images/product_shots/outofstock.webp',
     inStock: false
   ),
 ];
@@ -360,7 +360,7 @@ ${products.map((e) {
     final imageSection =
         """<div class="col-6 ${isOdd ? 'responsive-right' : 'responsive-left'}">
     <div>
-    <img src="${'https://via.placeholder.com/450' ?? e.image}" alt="${e.title} ${e.subtitle} Bottle">
+    <img src="${e.image}" alt="${e.title} ${e.subtitle} Bottle" height='600px'>
     </div>
     </div>""";
 
