@@ -339,7 +339,7 @@ main() async {
     <div class="container">
         <div class="row reverse">
             <div class="col-6 responsive-right">
-                <img src="https://via.placeholder.com/450" class="responsive" alt="" style="padding: 10px">
+                <img src="images/hero_masthead.jpg" class="responsive" alt="" style="padding: 10px">
             </div>
             <div class="col-6 vertical-center responsive-text-center">
                 <div>
