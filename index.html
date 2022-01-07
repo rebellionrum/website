@@ -46,10 +46,12 @@
             color: white;
         }
 
-        h1, h2 {
+        h1, h2, .small-head{
             font-family: 'Neuton', sans-serif;
             color: white;
             font-weight: 800;
+            line-height: 0.8;
+            padding-bottom: 10px;
         }
 
         h3, h4, h5 {
@@ -74,6 +76,10 @@
 
         h5 {
             font-size: 20pt
+        }
+        
+        .small-head {
+          font-size: 16pt;
         }
 
         .product-tile h2 {
@@ -159,8 +165,6 @@
 
         .special-price {
             font-size: 36pt;
-            margin-left: 20px;
-            font-weight: 600;
         }
 
         .red-strikethrough {
@@ -175,7 +179,9 @@
 
         .responsive-right {
             display: flex;
-            justify-content: center
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
         }
 
         .row > div {
@@ -191,10 +197,11 @@
             padding-top: 40px;
         }
 
-        .horizontal-centre {
+        .responsive-left {
             display: flex;
             flex-direction: column;
             align-items: center;
+            justify-content: center;
         }
 
         .special-price-badge {
@@ -215,11 +222,31 @@
         .blurb {
             margin: 16px;
         }
+        
+        .out-of-stock {
+          padding: 10px;
+          margin: 10px;
+          color: white;
+          background-color: red;
+        }
+        
+        a {
+            color: white;
+    text-decoration: none;
+    }
+    
+    .responsive-text-center {
+      text-align: center;
+    }
 
         @media only screen and (min-width: 960px) {
             .row {
                 flex-direction: row
             }
+            
+                .responsive-text-center {
+      text-align: left;
+    }
 
             .row.reverse {
                 display: flex;
@@ -227,8 +254,11 @@
             }
 
             .responsive-right {
-                display: flex;
-                justify-content: flex-end
+                align-items: flex-end
+            }
+            
+            .responsive-left {
+              align-items: flex-start;
             }
 
             .row > div {
@@ -250,7 +280,7 @@
             <div class="col-6 responsive-right">
                 <img src="https://via.placeholder.com/450" class="responsive" alt="" style="padding: 10px">
             </div>
-            <div class="col-6 vertical-center responsive">
+            <div class="col-6 vertical-center responsive-text-center">
                 <div>
                     <h1>OPENING SALE ON NOW</h1>
                     <hr>
@@ -262,61 +292,186 @@
 </section>
 
 <section class="product-tile">
+
     <div class="container">
         <div class="row reverse">
-            <div class="col-6 responsive-right" style="align-items: center">
+          <div class="col-6 responsive-right" style="justify-content: center">
                 <div style="text-align: center; max-width: 300px">
+                    
                     <h2>White Stag</h2>
                     <h3>Vodka</h3>
-                    <div class="strength">700ml / 40% Alc. Vol.</div>
-                    <div class="row" style="justify-content: center">
-                        <div class="price-discount">$38</div>
-                        <div class="special-price">
-                            $30
-                        </div>
-                    </div>
-                    <div class="blurb">One of the highest purity vodkas you will experience. So smooth you will hardly
-                        know its in your drink.
-                    </div>
-                </div>
-
-            </div>
-            <div class="col-6 horizontal-centre">
-                <div>
-                    <img src="images/tmp_bottle.jpg" alt="White Stag Vodka Bottle">
-                </div>
-
-            </div>
-        </div>
-    </div>
-</section>
-
-
-<section class="product-tile">
-    <div class="container">
-        <div class="row">
-
-            <div class="col-6 responsive-right">
-                <div>
-                    <img src="images/tmp_bottle.jpg" alt="White Stag Vodka Bottle">
-                </div>
-            </div>
-            <div class="col-6 horizontal-centre" style="justify-content: center">
-                <div style="text-align: center; max-width: 300px">
-                    <h2>White Stag</h2>
-                    <h3>Vodka</h3>
-                    <div class="strength">700ml / 40% Alc. Vol.</div>
+                    <div class="strength">700ml / 40.0% Alc. Vol.</div>
                     <div class="price-row">
                         <div class="red-strikethrough">
-                            <div class="price-discount">$38</div>
+                            <div class="price-discount">$38.0</div>
                         </div>
                         <div class="special-price">
                             <div class="special-price-badge">Special Price</div>
-                            $30
+                            $30.0
                         </div>
                     </div>
-                    <div class="blurb">One of the highest purity vodkas you will experience. So smooth you will hardly
-                        know its in your drink.
+                    <div class="blurb">One of the highest purity vodkas you will experience. So smooth you will hardly know its in your drink.
+                    </div>
+                </div>
+
+            </div>
+        <div class="col-6 responsive-left">
+    <div>
+    <img src="https://via.placeholder.com/450" alt="White Stag Vodka Bottle">
+    </div>
+    </div>
+        </div>
+    </div>
+</section><section class="product-tile">
+
+    <div class="container">
+        <div class="row ">
+        <div class="col-6 responsive-right">
+    <div>
+    <img src="https://via.placeholder.com/450" alt="Citrus Ginnie in a bottle Bottle">
+    </div>
+    </div>
+          <div class="col-6 responsive-left" style="justify-content: center">
+                <div style="text-align: center; max-width: 300px">
+                    
+                    <h2>Citrus</h2>
+                    <h3>Ginnie in a bottle</h3>
+                    <div class="strength">700ml / 40.0% Alc. Vol.</div>
+                    <div class="price-row">
+                        <div class="red-strikethrough">
+                            <div class="price-discount">$46.0</div>
+                        </div>
+                        <div class="special-price">
+                            <div class="special-price-badge">Special Price</div>
+                            $30.0
+                        </div>
+                    </div>
+                    <div class="blurb">A clean, crisp Gin with a light citrus punch. A great summer drink goes excellent with a Gin and Tonic.
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section><section class="product-tile">
+
+    <div class="container">
+        <div class="row reverse">
+          <div class="col-6 responsive-right" style="justify-content: center">
+                <div style="text-align: center; max-width: 300px">
+                    
+                    <h2>Citrus Sapphire</h2>
+                    <h3>Ginnie in a bottle</h3>
+                    <div class="strength">700ml / 40.0% Alc. Vol.</div>
+                    <div class="price-row">
+                        <div class="red-strikethrough">
+                            <div class="price-discount">$46.0</div>
+                        </div>
+                        <div class="special-price">
+                            <div class="special-price-badge">Special Price</div>
+                            $30.0
+                        </div>
+                    </div>
+                    <div class="blurb">Limited edition butterfly pea version of the Citrus Ginnie in a bottle. Changes colour to a beatutiful magenta when you add soda or gin and tonic.
+                    </div>
+                </div>
+
+            </div>
+        <div class="col-6 responsive-left">
+    <div>
+    <img src="https://via.placeholder.com/450" alt="Citrus Sapphire Ginnie in a bottle Bottle">
+    </div>
+    </div>
+        </div>
+    </div>
+</section><section class="product-tile">
+
+    <div class="container">
+        <div class="row ">
+        <div class="col-6 responsive-right">
+    <div>
+    <img src="https://via.placeholder.com/450" alt="Traditional Fine Gin Ginnie in a bottle Bottle">
+    </div>
+    </div>
+          <div class="col-6 responsive-left" style="justify-content: center">
+                <div style="text-align: center; max-width: 300px">
+                    
+                    <h2>Traditional Fine Gin</h2>
+                    <h3>Ginnie in a bottle</h3>
+                    <div class="strength">700ml / 40.0% Alc. Vol.</div>
+                    <div class="price-row">
+                        <div class="red-strikethrough">
+                            <div class="price-discount">$46.0</div>
+                        </div>
+                        <div class="special-price">
+                            <div class="special-price-badge">Special Price</div>
+                            $30.0
+                        </div>
+                    </div>
+                    <div class="blurb">Juniper, coriander, cardamom, angelica root & just a hint of citrus. Because its traditional does not mean its boring. Feedback from our testers is that its one of the best gins they have ever had. Don't believe it? Come on in a try it out.
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section><section class="product-tile">
+
+    <div class="container">
+        <div class="row reverse">
+          <div class="col-6 responsive-right" style="justify-content: center">
+                <div style="text-align: center; max-width: 300px">
+                    
+                    <h2>Traditional Butterfly Pea</h2>
+                    <h3>Ginnie in a bottle</h3>
+                    <div class="strength">700ml / 40.0% Alc. Vol.</div>
+                    <div class="price-row">
+                        <div class="red-strikethrough">
+                            <div class="price-discount">$46.0</div>
+                        </div>
+                        <div class="special-price">
+                            <div class="special-price-badge">Special Price</div>
+                            $30.0
+                        </div>
+                    </div>
+                    <div class="blurb">The same recipe as the traditional fine gin, but infused with butterfly pea flower to make a magical colour changing experience.
+                    </div>
+                </div>
+
+            </div>
+        <div class="col-6 responsive-left">
+    <div>
+    <img src="https://via.placeholder.com/450" alt="Traditional Butterfly Pea Ginnie in a bottle Bottle">
+    </div>
+    </div>
+        </div>
+    </div>
+</section><section class="product-tile">
+
+    <div class="container">
+        <div class="row ">
+        <div class="col-6 responsive-right">
+    <div>
+    <img src="https://via.placeholder.com/450" alt="Cloak & Dagger Rebellion Rum Co Bottle">
+    </div>
+    </div>
+          <div class="col-6 responsive-left" style="justify-content: center">
+                <div style="text-align: center; max-width: 300px">
+                    <div class='out-of-stock'>TEMPORARILY OUT OF STOCK</div>
+
+                    <h2>Cloak & Dagger</h2>
+                    <h3>Rebellion Rum Co</h3>
+                    <div class="strength">700ml / 40.0% Alc. Vol.</div>
+                    <div class="price-row">
+                        <div class="red-strikethrough">
+                            <div class="price-discount">$44.0</div>
+                        </div>
+                        <div class="special-price">
+                            <div class="special-price-badge">Special Price</div>
+                            $30.0
+                        </div>
+                    </div>
+                    <div class="blurb">A true aussie sugar cane spirit, excellent with coke. If you are tired of Bundy and want to give something else a try, this is for you.
                     </div>
                 </div>
 
@@ -324,77 +479,33 @@
         </div>
     </div>
 </section>
-
-
-<p>Factory direct artisan spirits distillery</p>
-<p><a href="">27/3 Octal Street, Yatala, QLD 4207</a></p>
-
-<p>Hours vary - check back here before heading in, or call ahead.</p>
-<p>Currently: OPEN</p>
-
-<p>OPENING SPECIAL! ALL BOTTLES $30 - Limited time only. No rainchecks</p>
-
-
-<div>
-    <h1>White stag vodka</h1>
-    <p>One of the highest purity vodkas you will ever experience. Produced using continious distillation - meaning it
-        has not 3 or 5 distillations, but the equivalent of thousands of distillations per bottle. So smooth you will
-        hardly know its in your drink.</p>
-    <p>700ml / 40% Alc. Vol</p>
-    <p>RRP: $38</p>
-    <p>Our price: $30 (introductory offer)</p>
-    <p>Stock: in stock</p>
-</div>
-
-<div>
-    <h1>Ginnie in a bottle - Citrus</h1>
-    <p>A clean, crisp Gin with a light citrus punch. A great summer drink goes excellent with a Gin and Tonic.</p>
-    <p>700ml / 40% Alc. Vol</p>
-    <p>RRP: $46</p>
-    <p>Our price: $30 (introductory offer)</p>
-    <p>Stock: in stock</p>
-</div>
-
-<div>
-    <h1>Ginnie in a bottle - Citrus Sapphire</h1>
-    <p>Limited edition butterfly pea version of the Citrus Ginnie in a bottle. Changes colour to a beatutiful magenta
-        when you add soda or gin and tonic.</p>
-    <p>700ml / 40% Alc. Vol</p>
-    <p>RRP: $46</p>
-    <p>Our price: $30 (introductory offer)</p>
-    <p>Stock: limited, call ahead</p>
-</div>
-
-<div>
-    <h1>Ginnie in a bottle - Traditional Fine Gin</h1>
-    <p>Juniper, coriander, cardamom, angelica root & just a hint of citrus. Because its traditional does not mean its
-        boring. Feedback from our testers is that its one of the best gins they have ever had. Don't believe it? Come on
-        in a try it out.</p>
-    <p>700ml / 40% Alc. Vol</p>
-    <p>RRP: $46</p>
-    <p>Our price: $30 (introductory offer)</p>
-    <p>Stock: in stock</p>
-</div>
-
-<div>
-    <h1>Ginnie in a bottle - Traditional Butterfly Pea</h1>
-    <p>The same recipe as the traditional fine gin, but infused with butterfly pea flower to make a magical colour
-        changing experience.</p>
-    <p>700ml / 40% Alc. Vol</p>
-    <p>RRP: $46</p>
-    <p>Our price: $30 (introductory offer)</p>
-    <p>Stock: in stock</p>
-</div>
-
-<div>
-    <h1>Rebellion Rum Co. Cloak & Dagger</h1>
-    <p>A true aussie sugar cane spirit, excellent with coke. If you are tired of Bundy and want to give something else a
-        try, this is for you.</p>
-    <p>700ml / 40% Alc. Vol</p>
-    <p>RRP: $44</p>
-    <p>Our price: $30 (introductory offer)</p>
-    <p>Stock: out of stock</p>
-</div>
+  
+    <section style='margin-top: 30px; margin-bottom: 30px;'>
+  <div class='container'>
+  <div class='row reverse'>
+  <div class='col-6'>
+  <iframe
+  width="100%"
+  height="450"
+  style="border:0"
+  loading="lazy"
+  allowfullscreen
+  src="https://www.google.com/maps/embed/v1/place?key=AIzaSyDf0CgfUh6F0aCLwNVSZyHN4wg6_QiTd2A
+    &q=Rebellion+Rum+Distillery+Yatala">
+</iframe></div>
+  <div class='col-6 responsive-text-center' style='margin-bottom: 20px'>
+  <h3>Rebellion Rum Distillery</h3>
+  <p>27/3 Octal Street, Yatala, 4207</p>
+  <h3 style='margin-top: 20px'>Opening Hours</h3>
+  <p>Thursday & Fridays from 10am - 5pm.<br> 
+Other times call 0452323234 to check.</p>
+<p><span class='small-head'>Phone:</span> <a href='tel:0452323234'>0452323234</a><br>
+<span class='small-head'>Email:</span> <a href='mailto:thecaptain@rebelrum.com.au'>thecaptain@rebelrum.com.au</a></p>
+  </div>
+  </div></div>
+  </section>
+  
 
 </body>
 </html>
+  

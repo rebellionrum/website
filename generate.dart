@@ -404,7 +404,7 @@ ${products.map((e) {
 </html>
   """;
 
-  await File('index-2.html').writeAsString(site);
+  await File('index.html').writeAsString(site);
 }
 
 class Product {
