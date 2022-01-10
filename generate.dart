@@ -376,7 +376,7 @@ ${products.map((e) {
     final imageSection =
         """<div class="col-6 ${isOdd ? 'responsive-right' : 'responsive-left'}">
     <div>
-    <img src="${e.image}" alt="${e.title} ${e.subtitle} Bottle" height='600px'>
+    <img src="${e.image}" alt="${e.title} ${e.subtitle} Bottle" height='600px' class='responsive'>
     </div>
     </div>""";
 
