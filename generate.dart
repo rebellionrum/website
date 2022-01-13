@@ -60,7 +60,7 @@ final outOfStockTile = """
 """;
 
 main() async {
-  products.sort((a,b)=>a.inStock ? 1 : -1);
+  products.sort((a,b)=>a.inStock && b.inStock == false ? -1 : 1);
   final site = """<!DOCTYPE html>
 <html lang="en">
 <head>
@@ -389,6 +389,7 @@ ${products.map((e) {
                     <h2>${e.title}</h2>
                     <h3>${e.subtitle}</h3>
                     <div class="strength">${e.volume}ml / ${e.strength * 100}% Alc. Vol.</div>
+                    ${e.inStock == false ? """OUT OF STOCK""" : """
                     <div class="price-row">
                         <div class="red-strikethrough">
                             <div class="price-discount">\$${e.rrp}</div>
@@ -397,7 +398,7 @@ ${products.map((e) {
                             <div class="special-price-badge">Special Price</div>
                             \$${e.salePrice}
                         </div>
-                    </div>
+                    </div>"""}
                     <div class="blurb">${e.blurb}
                     </div>
                 </div>
