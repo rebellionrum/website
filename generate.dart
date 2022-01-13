@@ -42,6 +42,7 @@ List<Product> products = [
     blurb:
         'The same recipe as the traditional fine gin, but infused with butterfly pea flower to make a magical colour changing experience.',
     image: 'images/product_shots/traditional_blue.jpg',
+    inStock: false
   ),
   Product(
     title: 'Cloak & Dagger',
@@ -49,8 +50,8 @@ List<Product> products = [
     rrp: 44,
     blurb:
         'A true aussie sugar cane spirit, excellent with coke. If you are tired of Bundy and want to give something else a try, this is for you.',
-    image: 'images/product_shots/outofstock.webp',
-    inStock: false
+    image: 'images/product_shots/cloak&dagger.jpg',
+    inStock: true
   ),
 ];
 
@@ -59,6 +60,7 @@ final outOfStockTile = """
 """;
 
 main() async {
+  products.sort((a,b)=>a.inStock ? 1 : -1);
   final site = """<!DOCTYPE html>
 <html lang="en">
 <head>
