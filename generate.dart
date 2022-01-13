@@ -56,7 +56,7 @@ List<Product> products = [
 ];
 
 final outOfStockTile = """
-<div class='out-of-stock'>TEMPORARILY OUT OF STOCK</div>
+<div class='out-of-stock'>TEMPORARILY OUT OF STOCK.</div>
 """;
 
 main() async {
