@@ -12,21 +12,21 @@ List<Product> products = [
     image: 'images/product_shots/whitestag.jpg',
   ),
   Product(
-    title: 'Citrus',
+    title: 'Lemon, Blood Orange, & Lime',
     subtitle: 'Ginnie in a bottle',
     rrp: 46,
     blurb:
         'A clean, crisp Gin with a light citrus punch. A great summer drink goes excellent with a Gin and Tonic.',
     image: 'images/product_shots/citrus.jpg',
   ),
-  Product(
-    title: 'Citrus Sapphire',
-    subtitle: 'Ginnie in a bottle',
-    rrp: 46,
-    blurb:
-        'Limited edition butterfly pea version of the Citrus Ginnie in a bottle. Changes colour to a beatutiful magenta when you add soda or gin and tonic.',
-    image: 'images/product_shots/citrus_sapphire.jpg',
-  ),
+  // Product(
+  //   title: 'Citrus Sapphire',
+  //   subtitle: 'Ginnie in a bottle',
+  //   rrp: 46,
+  //   blurb:
+  //       'Limited edition butterfly pea version of the Citrus Ginnie in a bottle. Changes colour to a beatutiful magenta when you add soda or gin and tonic.',
+  //   image: 'images/product_shots/citrus_sapphire.jpg',
+  // ),
   Product(
     title: 'Traditional Fine Gin',
     subtitle: 'Ginnie in a bottle',
@@ -42,7 +42,7 @@ List<Product> products = [
     blurb:
         'The same recipe as the traditional fine gin, but infused with butterfly pea flower to make a magical colour changing experience.',
     image: 'images/product_shots/traditional_blue.jpg',
-    inStock: false
+    inStock: true
   ),
   Product(
     title: 'Cloak & Dagger',
@@ -51,7 +51,7 @@ List<Product> products = [
     blurb:
         'A true aussie sugar cane spirit, excellent with coke. If you are tired of Bundy and want to give something else a try, this is for you.',
     image: 'images/product_shots/cloak&dagger.jpg',
-    inStock: true
+    inStock: false
   ),
 ];
 
