@@ -65,6 +65,7 @@ h2 {
 
 h3 {
   font-size: 30pt;
+  font-family: "Vintages", sans-serif;
 }
 
 h4 {
@@ -77,6 +78,8 @@ h5 {
 
 .small-head {
   font-size: 16pt;
+  font-family: Vintages, sans-serif;
+  padding-right: 6px;
 }
 
 .product-tile h2 {
