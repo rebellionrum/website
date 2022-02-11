@@ -4,7 +4,11 @@ mixin product(title,image,description,price,rrp)
         .product-content
             .title=title
             .description=description
-            .price $#{price}
+            .price-row
+                if(rrp>price)
+                    .red-strikethrough
+                        .price $#{rrp}
+                .price $#{price}
 
 
 mixin productCategory(name)

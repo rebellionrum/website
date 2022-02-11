@@ -159,18 +159,10 @@ img.responsive {
   flex: 12
 }
 
-.price-discount {
-  font-size: 36pt;
-  color: white;
-}
-
-.special-price {
-  font-size: 36pt;
-}
-
 .red-strikethrough {
   color: red;
-  text-decoration: line-through
+  text-decoration: line-through;
+  margin-right: 10px;
 }
 
 .vertical-center {
@@ -213,7 +205,7 @@ hr {
 }
 
 .price-row {
-  justify-content: center;
+  justify-content: right;
   display: flex;
   align-items: flex-end;
 }
@@ -317,6 +309,7 @@ a {
       .price {
         text-align: right;
         font-size: 26pt;
+        color: black;
       }
     }
   }
