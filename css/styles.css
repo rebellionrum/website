@@ -20,9 +20,10 @@ body {
   width: 100%;
 }
 
-.logo img {
+.logo img.responsive {
   margin: auto;
   display: block;
+  max-width: 85%;
 }
 
 header {
