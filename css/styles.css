@@ -259,6 +259,9 @@ a {
   flex-wrap: wrap;
   justify-content: center;
 }
+.products .divider-side {
+  max-width: 20%;
+}
 .products .product-category {
   flex: 1;
   width: 100%;

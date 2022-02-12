@@ -13,9 +13,9 @@ mixin product(title,image,description,price,rrp)
 
 mixin productCategory(name)
     .product-category(data-aos='fade-down')
-        img(src='images/dividerleft.png')
+        img.divider-side(src='images/dividerleft.png')
         .product-category-title=name
-        img(src='images/dividerright.png')
+        img.divider-side(src='images/dividerright.png')
 
 html
     head
