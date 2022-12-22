@@ -307,4 +307,12 @@ a {
   color: black;
 }
 
-/*# sourceMappingURL=styles.css.map */
+.fixed {
+  position: fixed;
+  z-index: 99999;
+  background-color: black;
+  padding: 10px;
+  text-align: center;
+  font-weight: bold;
+  color: red;
+}
